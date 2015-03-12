@@ -1,0 +1,21 @@
+<template name="mailchimp">
+<div class="row">
+  <h2>Mailchimp <small data-18n="app.settings">Settings</small></h2>
+</div>
+<div class="row">
+  <div class="col-md-6 well">
+    {{#autoForm collection="ReactionCore.Collections.Packages" schema="ReactionCore.Schemas.MailchimpPackageConfig" doc=packageData type="update" id="mailchimp-update-form"}}
+      <div class="form-group">
+      	Don't have a Mailchimp client ID and secret? <a href="https://developer.paypal.com/webapps/developer/applications" target="_blank">Get them here.</a>
+      </div>
+      {{>afQuickField name='settings.apiKey'}}
+      {{>afQuickField name='settings.listId'}}
+      {{>afQuickField name='settings.footer' type="boolean-select" trueLabel="remove opt-in in footer" falseLabel="add opt-in in footer" style="width: auto"}}
+      {{>afQuickField name='settings.checkout' type="boolean-select" trueLabel="remove opt-in during checkout" falseLabel="add opt-in during checkout" style="width: auto"}}
+      <button type="submit" class="btn btn-primary pull-right">Update</button>
+    {{/autoForm}}
+  </div>
+</div>
+
+  {{> MailChimpListSubscribe}}
+</template>
