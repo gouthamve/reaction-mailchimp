@@ -3,8 +3,8 @@ ReactionCore.registerPackage
   autoEnable: false # auto-enable in dashboard,transforms to enable
   #settings
   settings:
-    apiKey: ""
-    listId: ""
+    apiKey: "d45240174920ef6412f7cb3c784f825d-us9"
+    listId: "0396f9f327"
     footer: false
     checkout: false
 
