@@ -1,9 +1,13 @@
 <template name="MailChimpListSubscribe">
 	<div>
-	{{#if message}}
+    <div class="input-group">
+      <input class="email form-control" type="email" placeholder="email@example.com">
+      <span class="input-group-btn">
+        <button class="subscribe btn btn-default" type="button">Subscribe!</button>
+      </span>
+    </div><!-- /input-group -->
+  {{#if message}}
 		<p class="message">{{{message}}}</p>
 	{{/if}}
-		<input class="email" type="email" placeholder="email@example.com"/>
-		<button class="subscribe" type="button">Subscribe</button>
 	</div>
 </template>
