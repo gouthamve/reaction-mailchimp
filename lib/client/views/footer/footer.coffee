@@ -1,1 +1,1 @@
-Template.footerChimp.replaces "footer"
+Template.footerChimp.replaces "layoutFooter"
