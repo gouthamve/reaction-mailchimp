@@ -36,9 +36,7 @@ Package.onUse( function ( api, where ) {
 		'lib/client/mailchimp.js',
     'lib/client/views/footer/footer.html',
     'lib/client/views/footer/footer.css',
-    'lib/client/views/footer/footer.coffee',
-    'lib/client/views/checkout/checkout.html',
-    'lib/client/views/checkout/checkout.coffee'
+    'lib/client/views/footer/footer.coffee'
 	], ['client'] );
 
 	if ( api.export ) {
