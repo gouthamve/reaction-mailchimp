@@ -1,6 +1,6 @@
 Package.describe({
   name    : 'gouthamve:reaction-mailchimp',
-	version : '0.5.0',
+	version : '0.6.0',
 	summary : 'mailchimp integration for Reaction Commerce',
 	homepage: "https://github.com/Gouthamve/meteor-mailchimp",
 	author  : "Goutham Veeramachaneni",
@@ -36,7 +36,9 @@ Package.onUse( function ( api, where ) {
 		'lib/client/mailchimp.js',
     'lib/client/views/footer/footer.html',
     'lib/client/views/footer/footer.css',
-    'lib/client/views/footer/footer.coffee'
+    'lib/client/views/footer/footer.coffee',
+    'lib/client/views/checkout/cartCompleted.html',
+    'lib/client/views/checkout/cartCompleted.coffee'
 	], ['client'] );
 
 	if ( api.export ) {
