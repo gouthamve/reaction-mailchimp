@@ -26,16 +26,25 @@
               <input type="email" name="email" class="form-control" placeholder="email" id="update-order-email" aria-describedby="update-order-email">
               <span class="input-group-addon add-mailchimp" id="update-order" data-i18n="app.submit">Submit</span>
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" name="opt-in"> Opt in for Updates on offers and discounts
-              </label>
-            </div>
+            {{#if enabled}}
+              <div class="checkbox">
+                <label class="add-mailchimp">
+                  <input type="checkbox" name="opt-in"/> Opt in for Updates on offers and discounts
+                </label>
+              </div>
+            {{/if}}
           </div>
         </p>
         {{else}}
           <span data-i18n="cartCompleted.trackYourDelivery">Order updates will be sent to</span>
           <span>{{email}}</span>
+          {{#if enabled}}
+            <div class="checkbox">
+              <label class="add-mailchimp2">
+                <input type="checkbox" name="opt-in"> Opt in for Updates on offers and discounts
+              </label>
+            </div>
+          {{/if}}
         {{/unless}}
       </div>
     </div>

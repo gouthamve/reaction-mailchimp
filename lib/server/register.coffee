@@ -5,8 +5,9 @@ ReactionCore.registerPackage
   settings:
     apiKey: ""
     listId: ""
-    footer: false
-    checkout: false
+    public:
+      footer: false
+      checkout: false
 
   registry: [
     # all options except route and template

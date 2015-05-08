@@ -1,6 +1,6 @@
 Package.describe({
   name    : 'gouthamve:reaction-mailchimp',
-	version : '0.6.0',
+	version : '0.7.0',
 	summary : 'mailchimp integration for Reaction Commerce',
 	homepage: "https://github.com/Gouthamve/meteor-mailchimp",
 	author  : "Goutham Veeramachaneni",

@@ -10,8 +10,8 @@
       </div>
       {{>afQuickField name='settings.apiKey'}}
       {{>afQuickField name='settings.listId'}}
-      {{>afQuickField name='settings.footer' type="boolean-select" trueLabel="remove opt-in in footer" falseLabel="add opt-in in footer" style="width: auto"}}
-      {{>afQuickField name='settings.checkout' type="boolean-select" trueLabel="remove opt-in during checkout" falseLabel="add opt-in during checkout" style="width: auto"}}
+      {{>afQuickField name='settings.public.footer'}}
+      {{>afQuickField name='settings.public.checkout'}}
       <button type="submit" class="btn btn-primary pull-right">Update</button>
     {{/autoForm}}
   </div>

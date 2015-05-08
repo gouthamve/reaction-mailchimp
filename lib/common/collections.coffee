@@ -7,10 +7,10 @@ ReactionCore.Schemas.MailchimpPackageConfig = new SimpleSchema([
     "settings.listId":
       type: String
       label: "List Id"
-    "settings.footer":
+    "settings.public.footer":
       type: Boolean
       defaultValue: false
-    "settings.checkout":
+    "settings.public.checkout":
       type: Boolean
       defaultValue: false
   }
