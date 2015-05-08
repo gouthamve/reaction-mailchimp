@@ -17,7 +17,6 @@ Package.onUse( function ( api, where ) {
   api.use("meteor-platform@1.2.1");
 	api.use( ['templating'], 'client' );
   api.use("coffeescript");
-  api.use("aldeed:template-extension");
   api.use("reactioncommerce:core@0.4.1");
 
   api.addFiles("lib/server/register.coffee",['server']);
